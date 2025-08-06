@@ -55,7 +55,7 @@ func NewIETFCipher(key []byte) (cipher.AEAD, error) {
 
 // NewXCipher returns a cipher.AEAD implementing the
 // XChaCha20Poly1305 construction specified in RFC 7539 with a
-// 128 bit auth. tag.
+// 128 bit auth. tag
 func NewXCipher(key []byte) (cipher.AEAD, error) {
 	return newCipher(key, chacha.XNonceSize)
 }
